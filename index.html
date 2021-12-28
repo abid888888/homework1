@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+           width: 800px;
+            box-shadow:0 0 10px black ;
+        }
+    </style>
+    <script>
+        
+        function fn() { // function Scope
+            alert("hi")
+            var x = 100;
+            if(x>100){
+                console.log("x is greater");
+            }
+            else{
+                console.log("x is smaller") // block scope
+                x = 150
+                var a = "Abid"// var is function scope it can declare any whr
+                let b="hussain"// let is block scope it is called only in the particular function
+                console.log(x) 
+            }
+            console.log(a)
+            console.log(b)
+        }
+    </script>
+</head>
+
+<body>
+
+    <div>
+    <h2>Hi JavaScript</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum ea, corporis earum distinctio est modi
+    repellendus, quis quasi eius facilis nesciunt temporibus repudiandae id sint adipisci amet aspernatur
+    aperiam? Delectus nihil consequatur cum porro modi. Voluptate inventore enim dolorem!</p>
+    <button onclick="fn()">Explore More!</button>
+
+    </div>
+</body>
+
+</html>
